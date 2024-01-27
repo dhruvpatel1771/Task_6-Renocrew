@@ -1,0 +1,39 @@
+body{
+    background: #101010;
+}
+
+.ball{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: radial-gradient(#c7b7b7,rgb(22, 158, 27),green);
+    border-radius: 50%;
+    
+    box-shadow: -1px 2px 95px rgb(191, 185, 185);
+    animation: bounceA 3s linear 1s infinite alternate  , bounceB 1s ease-out 1s infinite alternate;
+}
+
+.container{
+    
+    width: 98vw;
+    background-color: hsl(0, 0%, 0%);
+
+}
+@keyframes bounceA {
+    from{
+        left: 0;
+    }
+    to{
+        left: 95%;
+    }
+}
+
+@keyframes bounceB {
+   from{
+        bottom: 0;
+    }
+    to{
+        bottom: 90% ;
+    }
+}
+
